@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/facebook_redux_clone/static/css/main.40e46377.css",
+    "main.js": "/facebook_redux_clone/static/js/main.013d2061.js",
+    "index.html": "/facebook_redux_clone/index.html",
+    "main.40e46377.css.map": "/facebook_redux_clone/static/css/main.40e46377.css.map",
+    "main.013d2061.js.map": "/facebook_redux_clone/static/js/main.013d2061.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40e46377.css",
+    "static/js/main.013d2061.js"
+  ]
+}
