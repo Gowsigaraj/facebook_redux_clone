@@ -1,0 +1,420 @@
+.navbarContainer {
+    width: 100%;
+    height: 80px;
+    // background-color: #1979f4;
+    background-color: #FFFFFF;
+    border: 3px solid #f0f2f5;
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+
+
+    .navbarLeft {
+        flex: 3;
+        font-size: 24px;
+        color: white;
+        margin-left: 20px;
+        font-weight: bold;
+        cursor: pointer;
+
+        .dflex {
+            display: flex;
+            align-items: center;
+            // justify-content: center;
+            gap: 10px;
+
+            .logos {
+
+                .logo img {
+                    color: white;
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 50%;
+
+
+
+
+                }
+            }
+
+            .searchBar {
+                width: 100%;
+                height: 40px;
+                background-color: #f0f2f5;
+
+                border-radius: 30px;
+                // border: 1px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+
+
+
+                .searchIcon {
+                    font-size: 25px;
+                    // margin-left: 10px;
+                    color: gray;
+                    cursor: pointer;
+                }
+
+                .searchInput {
+                    border: none;
+                    width: 70%;
+                    height: 40px;
+                    background-color: #f0f2f5;
+                    outline: none;
+                }
+            }
+
+
+        }
+
+
+    }
+
+    .navbarCenter {
+        flex: 5;
+
+        .navIcons {
+            .ulist {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+
+                .navIconsList {
+                    font-size: 30px;
+                    list-style: none;
+                    cursor: pointer;
+                    color: #606366;
+
+                }
+
+
+
+
+                .active ::after {
+                    content: "";
+                    height: 3px;
+                    width: 25px;
+                    display: block;
+                    border-bottom: 2px solid blueviolet;
+                    transition: 0.4s linear;
+
+                }
+
+
+            }
+        }
+
+    }
+
+    .navbarRight {
+        flex: 3.5;
+        // background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: white;
+        padding: 10px;
+
+
+        .navbarIcons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+
+            .navbarItems {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+                position: relative;
+                cursor: pointer;
+                color: black;
+                font-size: 35px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: #f0f2f5;
+            }
+
+            .navbarIconBadge {
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                position: absolute;
+                font-size: 12px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: -5px;
+                right: -5px;
+                color:white;
+
+            }
+        }
+
+        .profileImg {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .image .shareProfileImg {
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 2px solid white;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+
+            .showProfile {
+
+                border: 2px solid white;
+                padding: 10px;
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                position: absolute;
+                right: 20px;
+                top: 74px;
+
+                .profileContainer {
+                    padding: 10px;
+                    margin-top: 10px;
+
+
+                    .currentimg {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+
+                     
+
+                        .image .shareProfileImg {
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            border: 2px solid white;
+                            object-fit: cover;
+                            cursor: pointer;
+                        }
+
+                        .image .bold {
+                            font-size: 25px;
+                            font-weight: 700;
+                        }
+
+
+
+
+
+
+
+                        .hr {
+                            border-bottom: 2px solid #f1f1f1;
+                            margin-top: 10px;
+
+                        }
+                    }
+
+
+
+
+                }
+
+                .logoutContainer {
+
+                    .logout {
+                        .ul {
+
+                            li {
+                                display: flex;
+                                align-items: center;
+                                margin-top: 10px;
+
+                                list-style-type: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+//responsiveness
+@media only screen and (max-width: 992px) {
+    .navbarContainer {
+        .navbarLeft {
+            flex: 3;
+
+            .dflex {
+                .logos {
+                    .logo {
+                        font-weight: 500;
+                    }
+
+                }
+
+                .searchBar {
+                    width: 95%;
+
+                    .searchInput {
+                        width: 70%;
+                    }
+                }
+
+            }
+
+
+        }
+
+        .navbarCenter {
+            flex: 5;
+
+
+        }
+
+        .navbarRight {
+            flex: 3;
+
+            .profileImg {
+                .navbarImg {
+                    margin-right: 20px;
+                }
+
+            }
+
+
+        }
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbarContainer {
+        .navbarLeft {
+            flex: 4;
+        }
+
+        .navbarRight {
+            .navbarIcons {
+                .navbarItems {
+                    display: none;
+                }
+
+            }
+
+            // .navbarImg {
+            //     display: none;
+            // }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .navbarContainer {
+        justify-content: space-between;
+
+        .navbarLeft {
+            flex: 1;
+
+            .dflex {
+                .logos {
+                    .logo {
+                        font-weight: 500;
+                    }
+
+                }
+
+                .searchBar {
+
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .searchBar .searchIcon {
+
+                        display: block;
+                        font-size: 20px;
+
+
+                    }
+
+                    .searchInput {
+                        display: none;
+
+                    }
+                }
+
+            }
+
+        }
+
+        .navbarCenter {
+            flex: 1;
+            display: none;
+        }
+
+        .navbarRight {
+            flex: 1;
+
+            .navbarIcons {
+                .navbarItems {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+
+            .profileImg {
+                .navbarImg {
+                    margin-right: 20px;
+                }
+
+
+            }
+
+        }
+
+    }
+}

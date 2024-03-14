@@ -1,0 +1,135 @@
+.sidebar {
+    flex: 3;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    overflow-y: scroll;
+
+    .sidebarWrapper {
+        padding: 20px;
+
+
+
+        .image .shareProfileImg {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+            object-fit: cover;
+            cursor: pointer;
+
+
+        }
+
+        .image .bold {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+
+
+
+        .sidebarButton {
+            background-color: #011631;
+            color: #f1f1f1;
+            border-radius: 5px;
+            font-weight: 500;
+            padding: 10px;
+            cursor: pointer;
+            margin: 20px;
+            width: 150px;
+            border: none;
+
+        }
+
+        .sidebarHr {
+            margin: 10px 0px;
+        }
+
+        .sidebarFriendList {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+
+        }
+
+
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+//Responsiveness
+@media only screen and (max-width:992px) {
+
+    .sidebar {
+        flex: 1;
+
+        .sidebarWrapper {
+            padding: 17px;
+
+            .sidebarButton {
+                display: none;
+            }
+
+            .sidebarHr {
+                display: none;
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .sidebar {
+        display: block;
+
+        .sidebarWrapper {
+            padding: 3px;
+
+            .sidebarButton {
+                display: none;
+            }
+
+            .sidebarHr {
+                display: none;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:576px) {
+
+    .sidebar {
+        display: none;
+    }
+}
